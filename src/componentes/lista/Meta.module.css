@@ -1,0 +1,18 @@
+.meta {
+    @apply flex p-2 justify-between;
+}
+
+.icono {
+    height: 2.5rem; /* no funciona el apply para h */
+    @apply w-10 nm-inset-gray-100 rounded-full flex items-center justify-center text-xl;
+}
+
+.barra1 {
+    height: .25rem; /* no funciona el apply para h */
+    @apply nm-convex-gray-100 w-28 rounded bg-blue-200;
+}
+
+.barra2 {
+    height: .25rem; /* no funciona el apply para h */
+    @apply rounded bg-gradient-to-l from-green-200 to-blue-500;
+}
