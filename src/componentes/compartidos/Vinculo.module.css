@@ -1,0 +1,13 @@
+.icono {
+    height: 1.5rem;
+    width: 1.5rem;
+    /* @apply h-6 w-6;    no está funcionando la regla apply con la clase h */
+}
+
+.vinculo {
+    @apply flex items-center px-4 h-xl hover:bg-gray-200;
+}
+
+.texto {
+    @apply ml-2 text-sm font-semibold text-gray-900;
+}

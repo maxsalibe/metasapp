@@ -1,0 +1,22 @@
+.encabezado {
+    @apply h-xl flex justify-between shadow bg-white text-gray-700 relative;
+}
+
+.contenedor {
+    @apply flex items-center pl-4;
+}
+
+.logo {
+    margin-right: .5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    /* @apply mr-2 h-10 w-10;     no está funcionando la regla apply con la clase h  */
+}
+
+
+.titulo {
+    @apply text-lg font-semibold text-gray-900 uppercase;
+}
+
+
+
