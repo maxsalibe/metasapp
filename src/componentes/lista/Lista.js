@@ -9,8 +9,12 @@ function Lista() {
     const [estado, enviar] = useContext(Contexto);
 
     useEffect(() => {
-        const metas = pedirMetas();
-        enviar({tipo: 'colocar', metas});
+        
+        (async () => {
+            const metas = await pedirMetas();
+            console.log('Soy \'metas\' y llego a Lista.js\nen el tipo ' + typeof metas + '. Aquí me presento:', metas);
+            enviar({tipo: 'colocar', metas});
+        })()
     }, []);
 
     return (
