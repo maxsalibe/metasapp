@@ -10,6 +10,7 @@ function Lista() {
 
     useEffect(() => {
         const metas = pedirMetas();
+        console.log('Soy "metas" y así llego a Lista.js: ', metas);
         enviar({tipo: 'colocar', metas});
     }, []);
 
