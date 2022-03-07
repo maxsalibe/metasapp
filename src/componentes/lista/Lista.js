@@ -1,21 +1,13 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { Contexto } from "../../servicios/Memoria";
-import { pedirMetas } from "../../servicios/Pedidos";
 import Meta from "./Meta";
 
 function Lista() {
     
-    const [estado, enviar] = useContext(Contexto);
+    const [estado] = useContext(Contexto);
 
-    useEffect(() => {
-        
-        (async () => {
-            const metas = await pedirMetas();
-            console.log('Soy \'metas\' y llego a Lista.js\nen el tipo ' + typeof metas + '. Aquí me presento:', metas);
-            enviar({tipo: 'colocar', metas});
-        })()
-    }, []);
+
 
     return (
         <>
